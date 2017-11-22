@@ -1,0 +1,56 @@
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Montserrat', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: Consolas, monaco, monospace !default;
+
+
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: #232a32 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #500d1e !default;
+
+/// Alt brand color
+/// @type Color
+$brand-alt-color: #4d9258 !default;
+
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1000px !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

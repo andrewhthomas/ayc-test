@@ -1,0 +1,27 @@
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button {
+  @include rem-calc(14px);
+  display: inline-block;
+  padding: 20px 55px;
+  user-select: none;
+  transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.button--primary {
+  color: #fff;
+  border-color: $brand-alt-color;
+  background-color: $brand-alt-color;
+  &:hover {
+    background-color: darken($brand-alt-color, 10%);
+  }
+}

@@ -1,0 +1,33 @@
+
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.container {
+  max-width: $max-width; /* 1 */
+  margin-right: auto; /* 2 */
+  margin-left: auto; /* 2 */
+  padding-right: 20px; /* 3 */
+  padding-left: 20px; /* 3 */
+}
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  white-space: nowrap;
+  text-indent: 101%;
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

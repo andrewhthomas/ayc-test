@@ -1,0 +1,46 @@
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+footer {
+  padding: 4rem 0 2rem 0;
+  background-color: $brand-color;
+  text-align: center;
+  @include rem-calc(14px);
+  
+}
+
+.footer--logo {
+  margin-bottom: 4rem;
+ 
+}
+
+.footer--contact {
+color: #fff;
+margin-bottom: 2rem;
+text-transform: uppercase;
+
+span {
+  display: block;
+}
+
+em {
+  font-style: normal;
+  color: $brand-alt-color;
+}
+}
+.footer--copyright {
+  color: #9b9697;
+  font-weight: 300;
+
+  a {
+    color: #9b9697;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+}
