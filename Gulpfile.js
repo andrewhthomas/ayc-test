@@ -10,7 +10,7 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify');
 
 gulp.task('clean', function () {
-  return gulp.src('./dist', {
+  return gulp.src('./public', {
       read: false
     })
     .pipe(clean());
