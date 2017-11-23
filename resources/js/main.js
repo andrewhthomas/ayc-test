@@ -1,5 +1,3 @@
-
-
 jQuery(document).ready(function ($) {
   $('#menu').slicknav();
   $('.owl-carousel').owlCarousel({
