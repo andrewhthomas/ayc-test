@@ -16,10 +16,11 @@ a {
   flex-wrap: wrap;
   .column {
     flex: 1;
+    @include breakpoint(tablet) {
     margin-right: 20px;
     &:last-child {
       margin-right: 0;
-    }
+    }}
   }
 }
 #logo {
@@ -31,19 +32,4 @@ a {
 .icon {
   margin-bottom: 2rem;
   text-align: center;
-}
-address {
-  font-style: normal;
-  em {
-    flex: 1;
-    color: $brand-alt-color;
-    font-weight: 700;
-    font-style: normal;
-  }
-  .address {
-    display: flex;
-    .address--value {
-      flex: 3;
-    }
-  }
 }

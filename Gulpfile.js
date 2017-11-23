@@ -1,12 +1,20 @@
 var gulp = require('gulp'),
+  clean = require('gulp-clean'),
   concat = require('gulp-concat'),
   connect = require('gulp-connect'),
   imagemin = require('gulp-imagemin'),
   notify = require('gulp-notify'),
+  rename = require('gulp-rename'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
-  rename = require('gulp-rename'),
   uglify = require('gulp-uglify');
+
+gulp.task('clean', function () {
+  return gulp.src('./dist', {
+      read: false
+    })
+    .pipe(clean());
+});
 
 gulp.task('connect', function () {
   connect.server({
@@ -58,4 +66,6 @@ gulp.task('watch', function () {
   gulp.watch(['./resources/img/**/*'], ['img']);;
 });
 
-gulp.task('default', ['html', 'css', 'js', 'img', 'connect', 'watch']);
+gulp.task('build', ['clean', 'html', 'css', 'js', 'img']);
+
+gulp.task('default', ['clean', 'html', 'css', 'js', 'img', 'connect', 'watch']);

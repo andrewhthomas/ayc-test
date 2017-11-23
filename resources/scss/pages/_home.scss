@@ -51,4 +51,17 @@ address {
     padding-left: 4rem;
   }
   padding-left: 0;
+  font-style: normal;
+  em {
+    flex: 1;
+    color: $brand-alt-color;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .address {
+    display: flex;
+    .address--value {
+      flex: 3;
+    }
+  }
 }
