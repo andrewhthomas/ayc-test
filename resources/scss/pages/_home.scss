@@ -10,15 +10,14 @@
 }
 .featured--text {
   @include rem-calc(18px);
-  
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-weight: 200;
   @include breakpoint(tablet) {
     @include rem-calc(26px);
     width: 66.66%;
   }
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 200;
 }
 #content {
   padding: 5rem 0;
@@ -40,12 +39,16 @@
     }
   }
 }
-
 .contact--name {
-  padding-left: 4rem;
-  background: url('/img/icon-vcard.svg') no-repeat left center;
+  @include breakpoint(laptop) {
+    padding-left: 4rem;
+  }
+  padding-left: 3rem;
+  background: url("/img/icon-vcard.svg") no-repeat left center;
 }
-
 address {
-  padding-left: 4rem;
+  @include breakpoint(laptop) {
+    padding-left: 4rem;
+  }
+  padding-left: 0;
 }

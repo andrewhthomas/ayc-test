@@ -22,6 +22,10 @@
 .slicknav_menu {
   display: none;
 }
+.slicknav_menu .slicknav_menutxt {
+  text-shadow: none;
+  font-weight: 500;
+}
 
 @include breakpoint(mobileonly) {
   /* #menu is the original menu */
@@ -86,10 +90,9 @@
     list-style-type: none;
     li {
       @include breakpoint(tablet) {
-      float: left;
-      padding-right: 2rem;
+        float: left;
+        padding-right: 2rem;
       }
-      
       &:last-child {
         padding-right: 0;
       }
@@ -97,11 +100,11 @@
   }
   .contact--label {
     @include rem-calc(12px);
-    display: block;
-    text-align: right;
     @include breakpoint(tablet) {
       text-align: center;
     }
+    display: block;
+    text-align: right;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $brand-alt-color;
@@ -109,13 +112,13 @@
   }
   .contact--value {
     @include rem-calc(14px);
-    display: block;
-    text-align: right;
     @include breakpoint(tablet) {
       text-align: center;
     }
+    display: block;
+    text-align: right;
+    letter-spacing: 1px;
     color: $brand-color;
     font-weight: 700;
-    letter-spacing: 1px;
   }
 }
